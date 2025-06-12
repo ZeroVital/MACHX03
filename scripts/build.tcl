@@ -1,7 +1,13 @@
 # Lattice Diamond batch script for MachXO3LF-6900C-S-EVN
 # Create project and build bitstream
 
-prj_project create blinky -family MachXO3L -device LCMXO3LF-6900C-5BG256C -impl impl1 -top blinky
+prj_project create blinky \
+  -family MachXO3L \
+  -device LCMXO3LF-6900C-6BG256I \
+  -impl impl1 \
+  -top blinky \
+  -synthesis "lse"
+
 prj_source add src/blinky.v
 prj_constraint add constraints/blinky.lpf
 
