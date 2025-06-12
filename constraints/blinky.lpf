@@ -1,0 +1,8 @@
+# Constraints for MachXO3LF-6900C-S-EVN
+# Replace pin locations with values from the board documentation.
+
+IOBUF PORT "clk" IO_TYPE=LVCMOS33 ;
+LOCATE COMP "clk" SITE "??";
+
+IOBUF PORT "led" IO_TYPE=LVCMOS33 ;
+LOCATE COMP "led" SITE "??";
